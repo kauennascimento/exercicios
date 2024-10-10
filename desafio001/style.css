@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #8ab7a4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #2bf8c8, #29855e);
+    padding: 90px;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    text-align: left; 
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 5px;
+    color: aliceblue;
+    padding: 5px 10px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+header nav a:hover {
+    background-color: #45efa8; /* Cor congruente ao design geral do site */
+    border-radius: 5px; /* Curvatura leve nas bordas do quadradinho */
+    color: white; /* Cor do texto no hover */
+}
+
+main {
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+main h2 {
+    color: #1a744f;
+    font-family: "Michroma", sans-serif;
+}
+
+main a {
+    text-decoration: none;
+    color: #226d4e;
+    font-weight: 500;
+}
+
+.robozinho img, .robos img, .moca img {
+    display: block;
+    margin: auto;
+}
+
+main section {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #226d4e;
+    color: white;
+}
+
+.video {
+    border: 25px solid #1a744f;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.video iframe {
+    width: 100%;
+    height: 450px; 
+    border: none;
+}
+
+main p {
+    text-indent: 20px; 
+}
+
+.quemais h1 {
+    color: #ffffff;
+    background-color: #318361;
+    padding: 8px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.quemais {
+    background-color: #45efa872;
+    border-radius: 15px;
+}
+
+.quemais .resto {
+    padding: 5px 10px 10px 10px;
+}
+
+.resto .colunas {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.firstcolun, .secondcolun {
+    width: 48%;
+}
+
+.robozinho img, .robos img, .moca img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: auto;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+}
