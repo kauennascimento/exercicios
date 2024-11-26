@@ -29,13 +29,13 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
-    width: 250px;
+    width: 300px;
     height: 500px;
     border-radius: 20px;
     box-shadow: opx 0px 10px rgba(0, 0, 0, 0.422);
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -78,7 +78,6 @@ div.campo label {
 
 div.campo i {
     color: white;
-    background-color: black;
     font-size: 1.75em;
     width: 40px;
     padding: 4px;
@@ -89,10 +88,10 @@ div.campo input {
     font-size: 1em;
     width: calc(100% - 47px);
     height: 100%;
-    transform: translateY(-7.1px);
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-7.1px);
 }
 
 
